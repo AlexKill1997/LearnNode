@@ -38,6 +38,7 @@ const PORT = process.env.PORT || 3000
 //     }
 
 // }
-
-
-start()
+// start()
+app.listen(PORT, () => {
+    console.log(`server is ready on port ${PORT}`)
+})
