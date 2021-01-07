@@ -26,18 +26,18 @@ app.use('/card', cardRoutes)
 
 const PORT = process.env.PORT || 3000
 
-async function start() {
-    try {
-        const url = `mongodb+srv://alexey_kilafyan:liverpool2005@cluster0.7gdue.mongodb.net/<dbname>?retryWrites=true&w=majority`
-        await mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
-        app.listen(PORT, () => {
-            console.log(`server is ready on port ${PORT}`)
-        })
-    } catch {
-        console.log('jjjcjccjj')
-    }
+// async function start() {
+//     try {
+//         const url = `mongodb+srv://alexey_kilafyan:liverpool2005@cluster0.7gdue.mongodb.net/<dbname>?retryWrites=true&w=majority`
+//         await mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
+//         app.listen(PORT, () => {
+//             console.log(`server is ready on port ${PORT}`)
+//         })
+//     } catch {
+//         console.log('jjjcjccjj')
+//     }
 
-}
+// }
 
 
 start()
